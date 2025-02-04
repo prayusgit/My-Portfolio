@@ -43,8 +43,11 @@ const about = {
   heading: "About Me",
   imageLink: require("../editable-stuff/hashirshoaeb.png"),
   imageSize: 375,
-  message:
-    "My name is Prayush Bhattarai. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
+  messages: [
+    "👋 Hi, I'm Prayush Bhattarai, an AI enthusiast and Computer Engineering student passionate about Machine Learning, Artificial Intelligence, and Software Development. I thrive on solving real-world problems using cutting-edge technologies, from Natural Language Processing (NLP) and Computer Vision to Big Data and Blockchain.",
+    "🚀 Beyond AI, I have a strong foundation in web development, cloud computing, and data analytics. I love learning new tools, experimenting with innovative solutions, and contributing to open-source projects.",
+    "🎯 My goal? To harness the power of AI and technology to drive impactful innovations while constantly growing as a problem-solver. When I'm not coding, you'll find me reading books, traveling, or exploring new programming tools.",
+    "📫 Let’s connect! Whether you’re into AI, web development, or tech discussions, feel free to reach out!"]
   
 };
 
