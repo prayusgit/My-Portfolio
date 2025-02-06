@@ -36,9 +36,9 @@ const Navigation = React.forwardRef((props, ref) => {
       ref={navbarMenuRef}
       className={`px-3 fixed-top  ${!isTop ? "navbar-white" : "navbar-transparent"
         }`}
-      expand="lg"
+      expand="lg" 
     >
-      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"} className={`${!isTop ? "" : "white-text"}`}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
@@ -51,14 +51,14 @@ const Navigation = React.forwardRef((props, ref) => {
           } */}
           {repos.show && (
 
-            <NavLink
+            <NavLink className={`${!isTop ? "" : "white-text"}`}
               href={process.env.PUBLIC_URL + "/#projects"}
             >
               Projects
             </NavLink>
           )}
           <NavLink
-            className="nav-item lead"
+            className={`nav-item lead ${!isTop ? "" : "white-text"}`}
             href={about.resume}
             target="_blank"
             rel="noreferrer noopener"
@@ -67,7 +67,7 @@ const Navigation = React.forwardRef((props, ref) => {
           </NavLink>
           {about.show && (
             <NavLink
-              className="nav-item lead"
+              className={`nav-item lead ${!isTop ? "" : "white-text"}`}
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
               About
@@ -75,7 +75,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {skills.show && (
             <NavLink
-              className="nav-item lead"
+              className={`nav-item lead ${!isTop ? "" : "white-text"}`}
               href={process.env.PUBLIC_URL + "/#skills"}
             >
               Skills

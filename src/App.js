@@ -6,9 +6,10 @@ import {
   about,
   repos,
   leadership,
+  certifications,
   skills,
   getInTouch,
-  experiences
+  experiences,
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -22,6 +23,7 @@ import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
+import Certifications from "./components/home/Certifications.jsx";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -61,6 +63,14 @@ const Home = React.forwardRef((props, ref) => {
           message={leadership.message}
           img={leadership.images}
           imageSize={leadership.imageSize}
+        />
+      )}
+      {certifications.show && (
+        <Certifications
+          heading={certifications.heading}
+          message={certifications.message}
+          img={certifications.images}
+          imageSize={certifications.imageSize}
         />
       )}
       {skills.show && (

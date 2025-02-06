@@ -5,7 +5,7 @@ const navBar = {
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
+  gradientColors: " #4484ce, black, purple, #9b59b6",
   firstName: "Prayush",
   middleName: "",
   lastName: "Bhattarai",
@@ -13,12 +13,12 @@ const mainBody = {
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
+      url: "https://github.com/prayusgit",
     },
 
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/prayush-bhattarai-54829a20a/",
     },
   
   ],
@@ -41,8 +41,8 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
-  imageSize: 375,
+  imageLink: require("../editable-stuff/profile.jpg"),
+  imageSize: 175,
   messages: [
     "👋 Hi, I'm Prayush Bhattarai, an AI enthusiast and Computer Engineering student passionate about Machine Learning, Artificial Intelligence, and Software Development. I thrive on solving real-world problems using cutting-edge technologies, from Natural Language Processing (NLP) and Computer Vision to Big Data and Blockchain.",
     "🚀 Beyond AI, I have a strong foundation in web development, cloud computing, and data analytics. I love learning new tools, experimenting with innovative solutions, and contributing to open-source projects.",
@@ -88,6 +88,34 @@ const leadership = {
   }
 };
 
+const certifications = {
+  show: true,
+  heading: "Certifications",
+  message:
+    "As a enthusiatic learner, I have been participating in various programs. These are the some of the certificates that I have earned.",
+  images: [
+    { 
+      img: require("../editable-stuff/fuse_fellowship.png"), 
+      label: "", 
+      paragraph: "" 
+    },
+    { 
+      img: require("../editable-stuff/fabric_engineer.png"), 
+      label: "", 
+      paragraph: "" 
+    },
+    { 
+      img: require("../editable-stuff/data_analytics.png"), 
+      label: "", 
+      paragraph: "" 
+    },
+  ],
+  imageSize: {
+    width:"615",
+    height:"500"
+  }
+};
+
 // SKILLS SECTION
 const skills = {
   show: true,
@@ -99,8 +127,8 @@ const skills = {
     { name: "C/C++", value: 65 },
     { name: "JavaScript", value: 90 },
     { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "Web Development", value: 75 },
+    { name: "AI/ML", value: 80 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -145,4 +173,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, certifications };
