@@ -43,6 +43,7 @@ const about = {
   heading: "About Me",
   imageLink: require("../editable-stuff/profile.jpg"),
   imageSize: 175,
+  resume: require("../editable-stuff/resume.pdf"),
   messages: [
     "👋 Hi, I'm Prayush Bhattarai, an AI enthusiast and Computer Engineering student passionate about Machine Learning, Artificial Intelligence, and Software Development. I thrive on solving real-world problems using cutting-edge technologies, from Natural Language Processing (NLP) and Computer Vision to Big Data and Blockchain.",
     "🚀 Beyond AI, I have a strong foundation in web development, cloud computing, and data analytics. I love learning new tools, experimenting with innovative solutions, and contributing to open-source projects.",
